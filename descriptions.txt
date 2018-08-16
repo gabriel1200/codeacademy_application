@@ -1,0 +1,68 @@
+LinkedList:
+Nodes: Blocks that store data, integers, strings, booleans etc.
+Each block has two things, it's own data and a link to another block
+
+A linked list is a group of connected nodes, with the "head" being the beginning of this chain
+and the "tail" being the end of it. Each node contains a link to the next node, and it's own piece of information.
+7-> 8 -> 9->6
+
+7 is the value of the head node.
+
+Stack:
+Imagine a pile of plates. Each time you want to get a specefic plate, you need to take off each plate above it.
+When you put in a new plate, that plate will be the first thing removed when looking for it or any other plate.
+A Stack is the same concept, it hold's data in order, and you are forced to access this data first in last out,
+with the last item placed on the stack being the first item you can access.
+
+HashMaps:
+Imagine a mailbox unit, with each mailbox having it's own unique key.
+In a hashmap, each "block" has a piece of information that can be accessed with a unique value. 
+The information stored does not have to be unique, after all, two people can get the same magazine
+in their mailbox. But each key must be unique, or else one person could access mailboxes that aren't
+theirs.
+
+
+Trees:
+Like a linked list, a group of connected nodes, but with a much different structure. Each node can have only one other
+node point to it, but can point to multiple nodes. Or, each child can only have one parent, but each parent can have many children.
+The "rules" for the nodes and what you are allowed to point to depends on the tree.
+Each tree has a head node, with it's "branches" being the connections between each node, and the "leaves" being the node itself.
+       5
+      / \
+     4   7
+   /  \   \
+  2     3  8
+
+5 is the root node.
+ 
+ Heaps
+ A tree that follows the heap property, in which each parent node is greater than or equal to every child node(A Max heap), or each parent node is less than or equal to every child node(A Min heap). The most common heap is a "binary" heap, where each parent node has up to two child nodes, and the nodes are inserted left to right. If the inserted child node not fit this rule, it is switched with the parent node until each node in the tree satisies this property.
+
+Max Heap
+    4
+  /   \	
+3       2
+
+Insert 5
+      4
+     /  \
+    3    2
+  /
+5
+Heap property not satisfied, switch child and parent node.
+
+      4
+     /  \
+    5    2
+  /
+ 3
+
+ Still not satisfied, siwtch chid and parent node.
+
+       5
+     /  \
+    4    2
+  /
+ 3
+
+Heap rule satisfied
